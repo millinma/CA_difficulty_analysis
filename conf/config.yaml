@@ -1,0 +1,23 @@
+defaults:
+  - _autrainer_
+  - _self_
+
+results_dir: results
+experiment_id: default
+iterations: 100
+
+hydra:
+  sweeper:
+    params:
+      +seed: 1, 2, 3
+      +batch_size: 32
+      +learning_rate: 0.001
+      dataset: DCASE2020Task1A-16k, SpeechCommands-16k
+      model: Cnn10, Cnn14
+      optimizer: Adam
+      +curriculum: None
+      curriculum/sampling: None
+      curriculum/scoring: None
+      curriculum/pacing: None
+      curriculum.pacing.initial_size: 1
+      curriculum.pacing.final_iteration: 0

@@ -1,0 +1,6 @@
+id: CumulativeAccuracyDCASE2020Task1A
+type: CumulativeAccuracy
+_target_: aucurriculum.curricula.scoring.CumulativeAccuracy
+run_name: DCASE2020Task1A-16k_#_Adam_0.001_32_epoch_100_None_None_#
+stop: best # "best" or "last"
+subset: train # train, dev, test

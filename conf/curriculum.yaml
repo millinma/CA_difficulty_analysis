@@ -1,0 +1,16 @@
+defaults:
+  - _aucurriculum_score_
+  - _self_
+
+results_dir: results
+experiment_id: default
+
+hydra:
+  sweeper:
+    params:
+      curriculum/scoring:
+        CumulativeAccuracyDCASE2020Task1A,
+        CumulativeAccuracySpeechCommands
+
+correlation:
+  correlation_matrix: all
