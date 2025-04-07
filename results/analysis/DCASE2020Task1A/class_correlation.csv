@@ -1,0 +1,4 @@
+Base,Spearmanr,STD
+Train - Test correlation,0.8666666666666665,0.0
+Train - Test correlation (over single train recalls),0.7595959595959595,0.0866805573855553
+Difficulty Test,-0.9272727272727272,0.0
