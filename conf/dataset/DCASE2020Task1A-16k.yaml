@@ -8,7 +8,7 @@ stratify:
   - city
   - device
 
-path: data/DCASE2020Task1A
+path: data/DCASE2020Task1
 features_subdir: log_mel_16k
 index_column: filename
 target_column: scene_label

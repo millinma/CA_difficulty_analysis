@@ -2,15 +2,25 @@ defaults:
   - _aucurriculum_score_
   - _self_
 
+
 results_dir: results
-experiment_id: default
+experiment_id: experiments
+plotting:
+  filetypes:
+    - pdf
+    - png
+
 
 hydra:
   sweeper:
     params:
       curriculum/scoring:
-        CumulativeAccuracyDCASE2020Task1A,
-        CumulativeAccuracySpeechCommands
+        # CumulativeAccuracyDCASE2020Task1A,
+        # CumulativeAccuracySpeechCommands
+        CNN10,
+        CNN14
 
 correlation:
-  correlation_matrix: all
+  correlation_matrix: 
+    CNN10,
+    CNN14
